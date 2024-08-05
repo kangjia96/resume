@@ -1,0 +1,680 @@
+<html><head>
+  <link rel="stylesheet" href="assets/index.css">
+  <script src="assets/index.js"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>康佳的简历</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="b3929c5e-2139-4395-8a92-d1a39c6ca041" class="page sans"><header><h1 class="page-title">康佳的简历</h1><p class="page-description"></p></header><div class="page-body"><h2 id="62182b41-9c86-40fe-bf0d-bf9522157c04" class=""><strong>个人信息</strong></h2><hr id="ef62ecc2-b527-46a7-a46e-41c647f63f5c"/><ul id="1627aba3-95db-4dc3-aad1-f3ca47379e92" class="bulleted-list"><li style="list-style-type:disc"><strong>我：</strong>康佳 | 男 | Base 天津</li></ul><ul id="d21fc3eb-b00e-44b6-b789-e6fd23109ad2" class="bulleted-list"><li style="list-style-type:disc"><strong>教育水平：</strong>本科 | 河北大学 | 计算机科学与技术专业 | 2019 年毕业</li></ul><ul id="6ad26587-2c9b-477d-9f43-79c55c78a862" class="bulleted-list"><li style="list-style-type:disc"><strong>手机 &amp; 微信：</strong>+86 18232110170</li></ul><ul id="e29d4a6a-8b5d-475f-8e25-be2c7b549dd7" class="bulleted-list"><li style="list-style-type:disc"><strong>邮箱：</strong><mark class="highlight-red"><a href="mailto:ikangjia.cn@outlook.com"><strong>ikangjia.cn@outlook.com</strong></a></mark></li></ul><ul id="8e0695e8-e2a1-42e6-b2c1-27daf510246b" class="bulleted-list"><li style="list-style-type:disc"><strong>个人主页：</strong><mark class="highlight-red"><a href="https://ikangjia.cn/"><strong>https://ikangjia.cn</strong></a></mark></li></ul><h2 id="19b3f714-6550-4905-a142-2a68cf8bb9c4" class="">技能清单</h2><hr id="b7e88150-250e-4ba4-95af-6557fe88ddf3"/><h3 id="a49402d2-0cca-4de1-aba9-b0f2228b00d9" class=""><strong>后端 </strong> &amp; DevOps</h3><ul id="e2462b77-d0d6-4467-9d06-544790b4b1ec" class="bulleted-list"><li style="list-style-type:disc">熟练使用 Java 语言，包括但不限于 JavaSE 基础、集合操作、多线程操作、IO操作、反射、注解等知识。熟练使用 Java8+ 语法；了解 JVM 的组成与类加载机制</li></ul><ul id="60a90673-487e-4e66-982e-70657a4d04c6" class="bulleted-list"><li style="list-style-type:disc">熟练使用 Spring、Spring MVC、Spring Boot 框架，有多个相关项目经验</li></ul><ul id="c805ce88-2d2c-409e-918d-75fa0ece6475" class="bulleted-list"><li style="list-style-type:disc">熟练使用常用的中间件，如 Mybatis、Mybatis-Plus、Rabbit MQ、 Spring Data 系列等</li></ul><ul id="f595d0a6-a23e-4954-86d4-4d597a82dafe" class="bulleted-list"><li style="list-style-type:disc">熟悉数据库的基本概念与 SQL 标准语法，对 MySQL, Redis 等主流数据库有一定了解</li></ul><ul id="4459eed2-271e-47cf-ac64-38fa90c50e33" class="bulleted-list"><li style="list-style-type:disc">熟练使用 Linux 系统及 Nginx, Docker 等工具，能够完成项目从开发到部署的整套流程</li></ul><h3 id="16b05910-9b63-4d26-a53d-15c181e4886e" class="">Web</h3><ul id="21d77ec9-51e7-4fa6-b849-9eebd65b322a" class="bulleted-list"><li style="list-style-type:disc">掌握 HTML + CSS + JavaScript 基本特性，熟练使用 ES6+ 语法</li></ul><ul id="17c8659c-352f-4829-a97d-427b941f0799" class="bulleted-list"><li style="list-style-type:disc">熟练使用 Vue 全家桶，包括但不限于 Vuex, Vue Router, Pinia，了解 Nuxt</li></ul><ul id="3375173f-0e17-452c-89fc-1ca6614cd427" class="bulleted-list"><li style="list-style-type:disc">熟练使用主流前端工具库，如 ESLint, Element Plus, NaiveUI, ECharts...</li></ul><ul id="3a3e89f9-6925-4f62-92ee-77d7bc119e95" class="bulleted-list"><li style="list-style-type:disc">了解 Node.js 及相关生态，在个人项目有应用</li></ul><ul id="e8c6149b-8246-45ae-9c53-56a1fd72ab01" class="bulleted-list"><li style="list-style-type:disc">对 Electron 桌面端技术有所了解，有基于相关开源项目进行二开经验</li></ul><ul id="76dcc9ba-4276-4d80-b04a-5c8650f22c02" class="bulleted-list"><li style="list-style-type:disc">对 Flutter、Dart 有所了解，写过一些简单的个人小工具</li></ul><h3 id="d2358a1d-e447-4404-bc58-e7a684dccde8" class="">团队协作</h3><ul id="fba205cb-9628-4c80-810d-72ce9a0a4bfd" class="bulleted-list"><li style="list-style-type:disc">熟练使用 Git，能够践行 Git Flow 工作流；熟练使用 GitHub,GitLab</li></ul><ul id="0f5459e8-8990-49ed-805e-3d085d5ee2a6" class="bulleted-list"><li style="list-style-type:disc">熟练使用 IDEA、Navicat、Postman、XShell、Typora、XMind、ProcessOn 等工具</li></ul><ul id="6a89fc65-7703-43cf-84c0-7a2337cb9394" class="bulleted-list"><li style="list-style-type:disc">注重代码规范与质量，一直践行阿里的 Java 开发规约，也乐意遵守各种代码规范</li></ul><h2 id="0cc031c1-9a63-4ef5-8928-dda069537064" class=""><strong>工作经历</strong></h2><hr id="c35138b2-d442-4e00-af42-0bfb09147399"/><h3 id="08d6fa6f-542b-4497-a608-0010474f23d2" class=""><strong>2021.06 - 至今 天津南大通用数据技术股份有限公司 | Java 开发</strong></h3><p id="6955fac0-7631-47af-a495-87bbd9da4f85" class="">任职于天津南大通用总部的数据智能产品研发部门，担任后端开发工程师。主要负责管理后台等项目的开发与维护工作。</p><p id="207f8b73-20fd-4f68-9d64-e5d54c9a9fda" class="">⭐ GDOM 数据库运维管理系统 <code><strong>SpringBoot</strong></code>  <code><strong>RocketMQ</strong></code><strong> </strong><code><strong>Vue</strong></code><strong> </strong><code><strong>ElementPlus</strong></code></p><p id="613fdcf1-36f2-4c5b-b0fc-82995f350cfd" class="">本人负责前端开发和部分后端模块实现，待续……</p><p id="7bdf3055-607e-4c37-b165-f7c87ab91ba5" class="">⭐ <strong>GBase 8a MPP 统一数据监控与运维系统  </strong><code><strong>Spring MVC</strong></code><strong>  </strong><code><strong>GBase 8a MPP</strong></code><strong>  </strong><code><strong>GDBC</strong></code></p><p id="82e07c2a-4306-4965-8445-1ac992e25847" class="">这个项目是 GBase 8a MPP 的监控与运维系统。我主要负责其中的数据库管理、SQL 执行器、健康检查、会话任务、SSH 调用操作等模块。</p><p id="a53beacd-5610-491e-ba6c-d7ea902aa2d4" class="">数据库管理：在 Web 页面实现了针对 8a 集群中 VC、库、表、视图、存储过程、数据库用户角色权限等的可视化操作。其中后端设计了 SQL Builder 模块、SQL 执行模块、AOP 数据源管理模块、执行结果处理模块。</p><p id="c005cfcb-f56a-47f7-8629-3759c8483c1e" class="">SQL 执行器：在 Web 页面实现了输入 SQL 进行操作功能。主要难点是在后端自定义 Map 缓存以及集成定时任务框架实现了限制执行 SQL 的会话数和会话过期策略这一需求。</p><p id="14630c8f-b662-4865-8447-99338dfc2077" class="">健康检查：可定制的周期性的对集群、系统的一些指标进行健康度评估。其中周期性调度是基于 Quartz 的动态任务调度模块设计与实现。</p><h3 id="08425218-d0ad-4b30-b2f0-c422a08dd4a0" class=""><strong>2019.02 - 2020.04 紫光云技术有限公司 | Java 开发</strong></h3><p id="6c9627e1-fb49-49ad-b487-bc975a8599f4" class="">任职于数据中台组，在职期间参与了模型设计器、日志服务产品、 DMS 项目等多个核心项目。工作内容包括但不限于后端 API 设计与开发、数据库设计（从逻辑设计、画 E-R 图到库表的建立等）、编写完善开发各个阶段的相关文档。</p><p id="41edd5c9-d954-4f63-a857-ea9c28523fd0" class="">⭐ <strong>紫光云日志服务产品 （</strong><strong><a href="https://www.unicloud.com/app/logservice/">线上地址</a></strong><strong>）</strong><code><strong>Spring Boot</strong></code><strong> </strong><code><strong>Mybatis-Plus</strong></code><strong>  </strong><code><strong>ELK</strong></code><strong>  </strong><code><strong>RabbitMQ  </strong></code><strong> </strong><code><strong>企业微信</strong></code></p><p id="b8c385e0-88ec-4b65-be49-d167a338784f" class="">项目描述：一款基于各种规则接入各种软件或系统的日志，进行日志数据采集、消费、投递以及查询分析功能的在线工具。常用于服务运维、运营、安全等场景。</p><p id="02847d9b-e9ec-41ce-bae1-a2b4c0a1589f" class="">后端技术架构：Spring Boot、Mybatis-Plus、MySQL，此外还涉及 Elastic Search、Rabbit MQ操作以及对接企业微信进行获取联系人信息、发送企业微信信息等。</p><p id="53b2f557-e2d2-4eb8-bfa4-084d745b930d" class="">我负责整个产品后端的开发。这个产品控制台主要功能是：项目管理、日志库管理、日志配置管理、日志告警、ES 存储主索引创建操作等。</p><ol type="1" id="6742d483-06ff-4592-8bca-846b98ded66d" class="numbered-list" start="1"><li>根据需求设计整个后端的数据库，建立库、表；</li></ol><ol type="1" id="54e321e9-3b6c-43d2-8f6f-f1f35607844e" class="numbered-list" start="2"><li>后端开发环境搭建，Spring Boot 集成 Mybatis-Plus 、Druid 数据源连接池、Swagger、Rabbit MQ 等；</li></ol><ol type="1" id="ba61addc-fc0b-4e40-a05f-52055d59a750" class="numbered-list" start="3"><li>设计与前端的 API 接口，设计项目分层与编码开发。鉴于要集成的中间件较多，设计了 manager 层隐藏了对接企业微信、操作 Kibana 等各种纷乱的 Api，对 Service 层直接暴露调用接口，有效保证了代码的质量与整洁。</li></ol><ol type="1" id="e5ad3d31-9404-4981-b7ef-eaa7eed46620" class="numbered-list" start="4"><li>接收来自 Rabbit MQ 的告警信息，解析处理。一是对接公司的短信、邮件接口发送告警信息，二是调用企业微信相关 API 发送告警信息；</li></ol><ol type="1" id="090b8a51-e5d1-430e-8eff-c8246af5d632" class="numbered-list" start="5"><li>使用 Swagger 结合 Postman 进行接口测试；与前端人员进行对接接口；使用 Sonar 进行静态代码检查以及使用 Jenkins 进行项目打包。</li></ol><p id="f96af887-21f9-4726-95e8-dfa1fce68dca" class="">⭐ <strong>数据管理 DMS （</strong><strong><a href="https://www.unicloud.com/product/dms">线上地址</a></strong><strong>） </strong><code><strong>Spring Boot</strong></code><strong>  </strong><code><strong>JOOQ</strong></code><strong>   </strong><code><strong>JDBC</strong></code><strong>  </strong><code><strong>MySQL</strong></code><strong>  </strong><code><strong>Redis</strong></code><strong>  </strong><code><strong>Hive</strong></code></p><p id="7f4b38b4-0248-4143-8027-d6996a00eece" class="">项目描述：一个基于 B-S 架构的数据库管理系统，有点类似于阿里的 DMS 产品</p><p id="f4c5dcfc-1ffd-4796-b356-6c890d5efc16" class="">技术架构：Spring Boot、Spring Cloud、JDBC、MySQL。</p><p id="9a39718c-8612-4bde-896c-84d74dc436ac" class="">个人工作：参与部分核心模块开发，前后端联调。</p><p id="3beed056-1a5a-4587-b124-374bf505a117" class="">⭐ <strong>模型设计器项目  </strong><code><strong>Spring Boot</strong></code><strong>  </strong><code><strong>Spring Cloud</strong></code><strong>  </strong><code><strong>MySQL</strong></code></p><p id="6fa47392-7171-4ce2-8793-da3130ec3fd3" class="">项目描述：一款 Web 端的类 BI 工具，可使用鼠标拖拽生成关系型数据库映射模型，不写 SQL 也能对数据进行查询和统计。</p><p id="62de968b-64ca-4af2-a891-571008d80d62" class="">参与部分核心模块开发、测试以及前后端联调。</p><h3 id="da7f3472-942e-4b80-aa7f-4def6cd58e4a" class=""><strong>2018.06—2018.09 大三暑假 保定同升公司 | Java 开发实习</strong></h3><p id="4098c72b-4c41-411b-9f6c-dab67c739277" class="">期间参与了库存管理系统项目的部分模块的前后端实现。</p><h2 id="a4960f01-b583-473a-b31e-54817c9b0503" class=""><strong>自我评价</strong></h2><hr id="f3b4d89e-ee56-4c64-9502-355b56ad3427"/><ul id="f9959cc7-196e-4dfb-b596-f6331abbf131" class="bulleted-list"><li style="list-style-type:disc">工作负责，解决问题能力强，遇到麻烦时会第一时间寻找解决方案而非抱怨。有一定抗压能力</li></ul><ul id="78155c8b-6939-42c8-9924-af50c62fd250" class="bulleted-list"><li style="list-style-type:disc">喜欢整洁的桌面，优雅的代码和一目了然的注释，要求自己一定要写出当前能力下质量最高的代码</li></ul><ul id="a94629f9-8370-446c-bf0b-6135a5b3dc09" class="bulleted-list"><li style="list-style-type:disc">热爱编程，喜欢折腾。有较强的自学能力，乐于接受新知识和新技术，喜欢解决问题后的成就感。喜欢折腾各种软硬件，善于使用能降低心智负担与提升幸福感的生产力工具</li></ul><ul id="7f6aff5c-8d47-4cb0-8f8f-f19f73440a26" class="bulleted-list"><li style="list-style-type:disc">轻微社恐，但性格随和易相处。注重效率，守时，拒绝拖拉</li></ul></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
